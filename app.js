@@ -10,10 +10,6 @@ app.get('/', (req, res) => {
   res.send(`Task manager app`)
 })
 
-app.post('/', (req, res) => {
-  res.send('mary Jane')
-})
-
 app.use('/api/v1/tasks', tasks)
 
 const port = 3000
